@@ -1,0 +1,87 @@
+:root{
+    --page-1-color: steelblue;
+    --page-2-color: tan;
+    --page-3-color: teal;
+    --page-4-color: slateblue;
+    }
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    line-height: 1.4;
+}
+
+.page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    padding: 0 4rem;
+    color: white;
+}
+.page h1{
+    font-size: 4rem;
+    line-height: 1.2;
+ }
+ 
+
+
+}
+.page p{
+    font-size: 1.3rem;
+    margin-top: -2rem;
+    margin-bottom: 2rem;
+}
+
+.btn{
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: #f4f4f4;
+    color: #333;
+    text-decoration: none;
+    border: none;
+    transition: all 0.3s ease-in;
+    margin: 1rem;
+    font-size: 1.1rem;
+}
+
+.btn:hover,
+.btn-dark{
+    background: #333;
+    color: #f4f4f4;
+}
+.btn-dark:hover
+{
+   background: #f4f4f4;
+   color: #333;;
+}
+
+#page-1{ background: var(--page-1-color);}
+#page-2{ background: var(--page-2-color);}
+#page-3{ background: var(--page-3-color);}
+#page-4{ background: var(--page-4-color);}
+
+#page-1 h1{
+    transform: translateY(-1200px);
+    animation: heading 2s forwards ease-in;
+}
+#page-1 p{
+    transform: translateX(-1800px);
+    animation: para 2s forwards ease-in 1s;
+}
+@keyframes heading{
+     
+    to{
+        transform: translateY(0);
+    }
+}
+@keyframes para{
+     
+    to{
+        transform: translateY(0);
+    }
+}
